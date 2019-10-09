@@ -18,6 +18,7 @@
         },
         "streamSettings": {
             "security": "tls",
+			"network":"ws",
             "tlsSettings": {
                 "serverName": "fuckfuckgfw.cf",
                 "certificates": [
