@@ -6,6 +6,11 @@ curl  https://get.acme.sh | sh
 
 ~/.acme.sh/acme.sh --installcert -d fuckfuckgfw.cf --fullchainpath /etc/v2ray/v2ray.crt --keypath /etc/v2ray/v2ray.key –ecc
 
-apt-get install p7zip
+apt-get install p7zip-full
 
-7za x .acme.sh.zip
+7z x .acme.sh.zip
+
+acme.sh  --installcert  -d  fuckfuckgfw.cf   \
+        --key-file   /etc/ocserv/ssl/server-key.pem \
+        --fullchain-file /etc/ocserv/ssl/server-cert.pem \
+		--ca-file /etc/ocserv/ssl/ca-cert.pem
