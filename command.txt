@@ -4,7 +4,7 @@ apt-get -y install socat
 curl  https://get.acme.sh | sh
 
 
-~/.acme.sh/acme.sh --issue -d fuckfuckgfw.cf --standalone -k ec-256
+~/.acme.sh/acme.sh --issue -d fuckfuckgfw.cf --standalone -k ec-384
 
 
 ~/.acme.sh/acme.sh --installcert -d fuckfuckgfw.cf --fullchainpath /etc/v2ray/v2ray.crt --keypath /etc/v2ray/v2ray.key --ecc
@@ -20,3 +20,9 @@ acme.sh  --installcert  -d  fuckfuckgfw.cf   \
         --key-file   /etc/ocserv/ssl/server-key.pem \
         --fullchain-file /etc/ocserv/ssl/server-cert.pem \
 		--ca-file /etc/ocserv/ssl/ca-cert.pem
+		
+		
+
+
+wget raw.githubusercontent.com/Leonardo-Jodeve/v2config/master/key.7z
+apt-get install p7zip-full
